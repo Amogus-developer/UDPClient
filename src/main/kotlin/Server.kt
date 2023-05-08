@@ -7,7 +7,7 @@ private fun main() {
     try {
         val serverSocket = DatagramSocket(50001)
 
-        val receivingDataBuffer = ByteArray(50001)
+        val receivingDataBuffer = ByteArray(1024)
         var sendingDataBuffer = ByteArray(1024)
 
         val inputPacket = DatagramPacket(receivingDataBuffer, receivingDataBuffer.size)
